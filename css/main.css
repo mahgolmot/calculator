@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #076585; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fff,
+    #076585
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fff,
+    #076585
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  background-color: #c5dff8;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 1px 5px 15px rgb(179, 179, 209);
+}
+
+input:not(.text) {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border: unset;
+  cursor: pointer;
+}
+
+input:hover:not(.text, .operator) {
+  background-color: black;
+  color: #82c3ec;
+}
+
+.operator {
+  color: #1d1ce5;
+}
+.operator:hover {
+  background-color: #1d1ce5;
+  color: white;
+}
+
+.output .text {
+  width: 350px;
+  height: 60px;
+  text-align: right;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  border-radius: 34px;
+  font-size: 30px;
+  border: 2px solid black;
+}
+.calculator .equal {
+  width: 165px;
+  height: 70px;
+  border-radius: 38px;
+}
